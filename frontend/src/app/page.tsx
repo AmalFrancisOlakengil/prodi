@@ -17,7 +17,7 @@ export default function Home() {
     setResult("");
 
     try {
-      const response = await fetch("http://localhost:8000/api/search", {
+      const response = await fetch("https://prodi-jet.vercel.app/_svc/backend/index/search", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query }),
