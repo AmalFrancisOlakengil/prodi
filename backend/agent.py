@@ -87,7 +87,7 @@ def run_agent(user_query: str) -> dict:
     search_data_json = json.dumps(enriched_data, indent=2)
     
     model = genai.GenerativeModel(
-        model_name='gemini-2.0-flash', # Using a more modern model if available, otherwise flash is fine
+        model_name='gemini-2.5-flash', # Using a more modern model if available, otherwise flash is fine
         system_instruction=(
             "You are an AI Product Purchase Agent.\n"
             "Help the user find the best product by analyzing the provided real-time search data and review snippets.\n"
